@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridge Course Preparation - Top Resources for Students</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Function to increment and display the visit count
+        function incrementVisitCount() {
+            if (typeof (Storage) !== "undefined") {
+                if (localStorage.visitCount) {
+                    localStorage.visitCount = Number(localStorage.visitCount) + 1;
+                } else {
+                    localStorage.visitCount = 1;
+                }
+                document.getElementById('count').textContent = localStorage.visitCount;
+            } else {
+                console.log("Sorry, your browser does not support web storage...");
+            }
+        }
+        // Call the function when the page loads to increment the count
+        document.addEventListener('DOMContentLoaded', function () {
+            incrementVisitCount();
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Bridge Course Prep</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#notes">Notes</a></li>
+                    <li><a href="#pdfs">PDFs</a></li>
+                    <li><a href="#past-questions">Past Questions</a></li>
+                    <li><a href="#practice-questions">Daily Practice</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <h2>Your Ultimate Resource for Bridge Course Preparation</h2>
+                <p>Access notes, PDFs, past year questions, and daily practice questions to excel in your entrance
+                    exams.</p>
+                <div class="student-image-container">
+                    <img src="student.png" alt="Student" id="student-image">
+                </div>
+            </div>
+        </section>
+        <section id="notes" class="content-section">
+            <div class="container">
+                <h2>Notes</h2>
+                <p>Comprehensive notes to help you prepare effectively.</p>
+                <!-- Add downloadable notes here -->
+            </div>
+        </section>
+        <section id="pdfs" class="content-section">
+            <div class="container">
+                <h2>PDFs</h2>
+                <p>Access a variety of PDFs for additional study material.</p>
+                <!-- Add downloadable PDFs here -->
+            </div>
+        </section>
+        <section id="past-questions" class="content-section">
+            <div class="container">
+                <h2>Past Year Questions</h2>
+                <p>Practice with past year questions to get a feel of the exams.</p>
+                <!-- Add past year questions here -->
+            </div>
+        </section>
+        <section id="practice-questions" class="content-section">
+            <div class="container">
+                <h2>Daily Practice Questions</h2>
+                <p>Daily questions to keep you sharp and ready.</p>
+                <!-- Add daily practice questions here -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <section id="contact">
+                <h2>Contact Us</h2>
+                <p>For any inquiries, please contact us at: <a href="mailto:email@example.com">email@example.com</a></p>
+            </section>
+            <div id="visitor-counter">
+                <p>Number of visits: <span id="count">0</span></p>
+            </div>
+            <p>&copy; 2024 Bridge Course Prep. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- Google AdSense script -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-XXXXXXXXXX",
+            enable_page_level_ads: true
+        });
+    </script>
+</body>
+
+</html>
